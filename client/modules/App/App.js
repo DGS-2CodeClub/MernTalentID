@@ -13,6 +13,7 @@ import Footer from './components/Footer/Footer';
 // Import Actions
 import { toggleAddPost } from './AppActions';
 import { switchLanguage } from '../../modules/Intl/IntlActions';
+import UserInfoCard from "../UserInfoCard/UserInfoCard";
 
 export class App extends Component {
   constructor(props) {
@@ -56,6 +57,7 @@ export class App extends Component {
           <div className={styles.container}>
             {this.props.children}
           </div>
+          <UserInfoCard />
           <Footer />
         </div>
       </div>
